@@ -9,7 +9,7 @@ import copy
 
 def calculate_area(surfname,fwhm, software="CIVET", subject="fsid",surf="pial",hemi="lh"):
     """calculate and smooth surface area using CIVET or freesurfer"""
-    tmpdir= os.path.expanduser('~') + '/analysis/tmp/' + str(np.random.randint(1000))
+    tmpdir= os.path.expanduser('~') + '/tmp/' + str(np.random.randint(1000))
     os.makedirs(tmpdir, exist_ok=True)
     if software == "CIVET" :
         try:
